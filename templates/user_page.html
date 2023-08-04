@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuário Logado</title>
+</head>
+<body>
+    <h1>Usuário Logado</h1>
+    <p>Bem-vindo(a), {{ username }}!</p>
+    <form action="{{ url_for('logout') }}" method="post">
+        <input type="submit" value="Logout">
+    </form>
+</body>
+</html>
